@@ -1,35 +1,17 @@
-#include "MyWindow.hpp"
-#include "Game.cpp"
+#include <SFML/Audio.hpp>
+#include <Windows.h>
+#include "Game.h"
+
 int main()
 {
+	//Window variables
+	int ticks = 0;
+	FreeConsole(); //Hide console
+
+	// menu
+	
+
+	// game
 	Game game;
-	game.run();
-//	MyWindow a(sf::VideoMode(240, 480), "aboba", 0);
-
+	game.start();
 }
-
-// #include <sfml>
-//#include <SFML/Graphics.hpp>
-//
-//int main()
-//{
-//    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-//    sf::CircleShape shape(100.f);
-//    shape.setFillColor(sf::Color::Green);
-//
-//    while (window.isOpen())
-//    {
-//        sf::Event event;
-//        while (window.pollEvent(event))
-//        {
-//            if (event.type == sf::Event::Closed)
-//                window.close();
-//        }
-//
-//        window.clear();
-//        window.draw(shape);
-//        window.display();
-//    }
-//
-//    return 0;
-//}
